@@ -1,5 +1,3 @@
-from traceback import print_tb
-
 import numpy as np
 
 A = np.array([2.493, 0.911])
