@@ -1,0 +1,1 @@
+kilpailu = Kilpailu(Suuri_romuralli, 8000, 10)

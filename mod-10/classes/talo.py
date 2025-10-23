@@ -14,3 +14,7 @@ class Talo:
         self.haluttu_kerros = haluttu_kerros
         hissi = self.hissit[hissin_numero - 1]
         hissi.siirry_kerrokseen(haluttu_kerros)
+
+    def palohalytys(self):
+        for hissi in self.hissit:
+            hissi.siirry_kerrokseen(self.alin_kerros)
