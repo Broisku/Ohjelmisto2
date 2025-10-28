@@ -5,15 +5,17 @@ table = PrettyTable()
 
 autot = []
 
-for i in range(10):
+for i in range(1, 11):
     huippunopeus = random.randint(100,200)
-    autot.append(Auto("ABC-" + str(i+1), huippunopeus))
+    autot.append(Auto("ABC-" + str(i), huippunopeus))
 
 while max(auto.matka for auto in autot) < 10_000:
     for auto in autot:
         auto.kulje(1)
         auto.kiihdyta(random.randint(-10, 15))
     kokonaismatka = sum(auto.matka for auto in autot)
+
+autot.sort(key = lambda car: car.matka, reverse = True)
 
 table.field_names = ["rekisteritunnus", "huippunopeus", "nopeus", "matka"]
 for auto in autot:

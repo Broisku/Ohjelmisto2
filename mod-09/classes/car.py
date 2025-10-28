@@ -6,7 +6,7 @@ class Auto:
         self.matka = 0
 
     def kiihdyta(self, nopeuden_muutos):
-        self.nopeus = self.nopeus + nopeuden_muutos
+        self.nopeus += nopeuden_muutos
         if self.nopeus > self.huippunopeus:
             self.nopeus = self.huippunopeus
         elif self.nopeus < 0:
