@@ -15,9 +15,11 @@ count = 0
 while True:
     kilpailu.tunti_kuluu()
     if kilpailu.kilpailu_ohi():
+        autot.sort(key=lambda car: car.matka, reverse=True)
         kilpailu.tulosta_tilanne()
         break
     if count % 10 == 0:
+        autot.sort(key=lambda car: car.matka, reverse=True)
         kilpailu.tulosta_tilanne()
         print("")
     count += 1
