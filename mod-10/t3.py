@@ -1,4 +1,3 @@
-from classes.hissi import Hissi
 from classes.talo import Talo
 
 talo = Talo(-5, 10, 4)

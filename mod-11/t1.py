@@ -1,4 +1,4 @@
-from classes.julkaisu import Julkaisu, Lehti, Kirja
+from classes.julkaisu import Lehti, Kirja
 
 p1 = "Aku Ankka"
 p2 = "Aki Hyyppä"
