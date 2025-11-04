@@ -1,5 +1,4 @@
 import requests
-import json
 
 paikkakunta = input("Syötä paikkakunta: ")
 print("")
